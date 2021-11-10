@@ -20,15 +20,17 @@ public class TesteFuncionario {
         
         //Construção do objeto funcionario
         
-        funcionario.calcularSalario();
+        
         
         //imprimindo Funcionario
         System.out.println("\n\t\t\t====== Apresentando Funcionário =====\n");
+        funcionario.calcularSalario();
         funcionario.apresentarFuncionario();
         
          //imprimindo Funcionario2
         System.out.println("\n\t\t\t====== Apresentando Funcionário 2 =====\n");
-         Funcionario funcionario2 = new Funcionario(1, "Flavinho do pneu", 2500);
+        Funcionario funcionario2 = new Funcionario(1, "Flavinho do pneu", 2500);
+        funcionario.calcularSalario();
         funcionario2.apresentarFuncionario();
         
         //criação do objeto vendedor
