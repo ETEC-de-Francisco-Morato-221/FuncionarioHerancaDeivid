@@ -15,14 +15,10 @@ public class TesteFuncionario {
         //Criação das instancias
         
         Funcionario funcionario = new Funcionario();
-        Funcionario funcionario2 = new Funcionario();
-        Vendedor vendedor = new Vendedor();
-        Vendedor vendedor2 = new Vendedor();
+       
+        
         
         //Construção do objeto funcionario
-        funcionario.setNome("Flavinho do pneu");
-        funcionario.setNumero(1);
-        funcionario.setSalario(2500);
         
         funcionario.calcularSalario();
         
@@ -32,9 +28,12 @@ public class TesteFuncionario {
         
          //imprimindo Funcionario2
         System.out.println("\n\t\t\t====== Apresentando Funcionário 2 =====\n");
+         Funcionario funcionario2 = new Funcionario(1, "Flavinho do pneu", 2500);
         funcionario2.apresentarFuncionario();
         
         //criação do objeto vendedor
+        Vendedor vendedor = new Vendedor();
+        Vendedor vendedor2 = new Vendedor();
         vendedor.setNome("Flavinho vendedor de pneu");
         vendedor.setNumero(3);
         vendedor.setSalario(3000);
