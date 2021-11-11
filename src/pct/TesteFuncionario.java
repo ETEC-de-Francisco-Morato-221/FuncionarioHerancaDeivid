@@ -14,29 +14,33 @@ public class TesteFuncionario {
     public static void main(String[] args) {
         //Criação das instancias
         
-        Funcionario funcionario = new Funcionario();
+        
        
         
         
         //Construção do objeto funcionario
-        
-        
+        Funcionario funcionario = new Funcionario();
         
         //imprimindo Funcionario
         System.out.println("\n\t\t\t====== Apresentando Funcionário =====\n");
         funcionario.calcularSalario();
         funcionario.apresentarFuncionario();
         
-         //imprimindo Funcionario2
-        System.out.println("\n\t\t\t====== Apresentando Funcionário 2 =====\n");
+        //Construção do objeto funcionario2
         Funcionario funcionario2 = new Funcionario(1, "Flavinho do pneu", 2500);
-        funcionario.calcularSalario();
+        
+        //imprimindo Funcionario2
+        System.out.println("\n\t\t\t====== Apresentando Funcionário 2 =====\n");
+        funcionario2.calcularSalario();
         funcionario2.apresentarFuncionario();
         
         //criação do objeto vendedor
         Vendedor vendedor = new Vendedor();
+        
+        
+         //criação do objeto vendedor2
         Vendedor vendedor2 = new Vendedor();
-        vendedor.setNome("Flavinho vendedor de pneu");
+        vendedor.setNome("Shaolin Matador de porcos");
         vendedor.setNumero(3);
         vendedor.setSalario(3000);
         
